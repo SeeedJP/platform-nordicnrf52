@@ -21,7 +21,7 @@
     "mcu": "nrf52840",
     "variant": "Seeed_Wio_BG770A",
     "bsp": {
-      "name": "adafruit"
+      "name": "seeed"
     },
     "softdevice": {
       "sd_flags": "-DS140",

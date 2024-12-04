@@ -124,7 +124,7 @@ env.Append(
 upload_protocol = env.subst("$UPLOAD_PROTOCOL")
 
 if "nrfutil" == upload_protocol or (
-    board.get("build.bsp.name", "nrf5") == "adafruit"
+    board.get("build.bsp.name", "nrf5") in ["adafruit","seeed"]
     and "arduino" in env.get("PIOFRAMEWORK", [])
 ):
     env.Append(
